@@ -12,8 +12,8 @@ ENV REDIRECT_TARGET=$REDIRECT_TARGET
 ENV GA=$GA
 
 WORKDIR $APP_HOME
-COPY redirect.py ./
+COPY dnsupdate.py ./
 
 RUN pip install Flask gunicorn pyga pylint autopep8
 
-CMD exec gunicorn --log-level debug --bind :$PORT --workers 1 --threads 8 redirect:app
+CMD exec gunicorn --log-level debug --bind :$PORT --workers 1 --threads 8 dnsupdate:app
