@@ -1,4 +1,4 @@
-<h1  align="center">Welcome to web-redirect 👋</h1>
+<h1  align="center">Welcome to RouterOS to DNS gateway 👋</h1>
 <p>
 <img  alt="Version"  src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000"  />
 <a  href="http://www.apache.org/licenses/LICENSE-2.0"  target="_blank">
@@ -11,7 +11,7 @@
 
 > Receive RouterOS DHCP Lease events and update a DNS server
 
-### 🏠 [Homepage](https://github.com/Pioneera/web-redirect)
+### 🏠 [Homepage](https://github.com/Aperim/routeros-dhcp-dns)
 
 ## Assumptions
 
@@ -57,7 +57,7 @@ PROJECT_ID=project-id
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br  />Feel free to check [issues page](https://github.com/Aperim/routeros-constellix-gateway/issues).
+Contributions, issues and feature requests are welcome!<br  />Feel free to check [issues page](https://github.com/Aperim/routeros-dhcp-dns/issues).
 
 ## Show your support
 

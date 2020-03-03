@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 PROJECT_NAME = "RouterOS DHCP DNS Updater"
 PROJECT_VERSION = "1.0.0"
-PROJECT_PACKAGE_NAME = "routeros-to-dns"
+PROJECT_PACKAGE_NAME = "routeros-dhcp-dns"
 PROJECT_LICENSE = "Apache License 2.0"
 PROJECT_AUTHOR = "Troy Kelly"
 PROJECT_COPYRIGHT = " 2020-{}, {}".format(dt.now().year, PROJECT_AUTHOR)
