@@ -1,0 +1,19 @@
+FROM python:3.8-slim
+
+RUN apt-get -y update && apt install -y git-all net-tools
+
+ARG REDIRECT_TYPE
+ARG REDIRECT_TARGET
+ARG GA
+
+ENV APP_HOME /app
+ENV REDIRECT_TYPE=$REDIRECT_TYPE
+ENV REDIRECT_TARGET=$REDIRECT_TARGET
+ENV GA=$GA
+
+WORKDIR $APP_HOME
+COPY redirect.py ./
+
+RUN pip install Flask gunicorn pyga pylint autopep8
+
+CMD exec gunicorn --log-level debug --bind :$PORT --workers 1 --threads 8 redirect:app

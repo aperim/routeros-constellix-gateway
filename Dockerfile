@@ -1,0 +1,17 @@
+FROM python:3.8-slim
+
+ARG PROVIDER
+ARG CONSTELLIX_USERNAME
+ARG CONSTELLIX_TOKEN
+
+ENV APP_HOME /app
+ENV PROVIDER=$PROVIDER
+ENV CONSTELLIX_USERNAME=$CONSTELLIX_USERNAME
+ENV CONSTELLIX_TOKEN=$CONSTELLIX_TOKEN
+
+WORKDIR $APP_HOME
+COPY dnsupdate.py ./
+
+RUN pip install Flask gunicorn pyga
+
+CMD exec gunicorn --log-level info --bind :$PORT --workers 1 --threads 8 dnsupdate:app
