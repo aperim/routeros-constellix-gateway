@@ -31,7 +31,7 @@ PROJECT_URLS = {
 PACKAGES = find_packages(exclude=["tests", "tests.*"])
 
 REQUIRES = [
-    "Flask==1.1.1",
+    "Flask==2.3.2",
     "gunicorn==20.0.4",
     "pip>=8.0.3",
 ]
