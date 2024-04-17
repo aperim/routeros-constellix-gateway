@@ -32,7 +32,7 @@ PACKAGES = find_packages(exclude=["tests", "tests.*"])
 
 REQUIRES = [
     "Flask==1.1.1",
-    "gunicorn==20.0.4",
+    "gunicorn==22.0.0",
     "pip>=8.0.3",
 ]
 
